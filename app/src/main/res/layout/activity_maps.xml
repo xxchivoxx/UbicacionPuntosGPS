@@ -1,0 +1,42 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editTextAddMarker"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:hint="Introduce una referencia" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_delete"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="mini" />
+        <!--Button
+            android:id="@+id/btn1"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="Eliminar" /-->
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oliver.gps_puntosubicacion.MapsActivity" />
+</LinearLayout>
